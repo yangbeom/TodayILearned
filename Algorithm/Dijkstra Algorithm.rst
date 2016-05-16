@@ -31,14 +31,11 @@ def Dijkstra(graph,start,end):
 
 # visit이 0인것중에 가장 짧은것 while
     while 1:
-        # print("not router[k]['visit']")
         not_visit = {k:router[k]['dist'] for k in router.keys() if router[k]['visit']==0 if router[k]['dist'] != 'infinit'}
-        # print(not_visit)
         if not not_visit:
             break
         for k in not_visit.keys():
             if not_visit[k] == min(not_visit.values()):
-                print(k)
                 router[k]['visit']=1
                 for going in graph[k].keys():
                     if router[going]['dist'] !=0:
@@ -58,13 +55,6 @@ def Dijkstra(graph,start,end):
 
 실행 결과
 ::
-
-미용실
-슈퍼마켓
-학원
-레스토랑
-은행
-학교
 집에서 학교까지 최단경로는 집->미용실->슈퍼마켓->레스토랑->은행->학교
 최단 거리는 17
 
