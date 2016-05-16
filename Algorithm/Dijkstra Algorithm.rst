@@ -2,7 +2,7 @@ Dijkstra Algorithm(다익스트라 알고리즘)
 =============================
 가중치가 있는 그래프에서 최단경로를 찾는 알고리즘
 
-.. image:: https://github.com/yangbeom/TodayILearned/Algorithm/image/dijkstar0.jpg
+.. image:: TodayILearned/Algorithm/image/dijkstar0.jpg
 
     graph = {'집':{'학원':9, '슈퍼마켓':10, '미용실':5},
                  '미용실':{'슈퍼마켓':3, '은행':11, '집':5},
