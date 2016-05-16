@@ -32,7 +32,8 @@ Dijkstra Algorithm(다익스트라 알고리즘)
 
     # visit이 0인것중에 가장 짧은것 while
         while 1:
-            not_visit = {k:router[k]['dist'] for k in router.keys() if router[k]['visit']==0 if router[k]['dist'] != 'infinit'}
+            not_visit = {k:router[k]['dist'] for k in router.keys()
+                         if router[k]['visit']==0 if router[k]['dist'] != 'infinit'}
             if not not_visit:
                 break
             for k in not_visit.keys():
@@ -40,7 +41,8 @@ Dijkstra Algorithm(다익스트라 알고리즘)
                     router[k]['visit']=1
                     for going in graph[k].keys():
                         if router[going]['dist'] !=0:
-                            if router[going]['dist']!='infinit' and router[going]['dist']> router[k]['dist'] + graph[k][going]:
+                            if router[going]['dist']!='infinit'
+                               and router[going]['dist']> router[k]['dist'] + graph[k][going]:
                                 router[going]['dist'] = router[k]['dist'] + graph[k][going]
                                 router[going]['route'] = router[k]['route'] +[k]
 
