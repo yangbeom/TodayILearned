@@ -5,7 +5,7 @@ Dijkstra Algorithm(다익스트라 알고리즘)
 .. image:: image/dijkstar0.jpg
 
 이미지를 graph화 시켜놓은것
-::
+.. code::python
 
 graph = {'집':{'학원':9, '슈퍼마켓':10, '미용실':5},
          '미용실':{'슈퍼마켓':3, '은행':11, '집':5},
@@ -15,7 +15,7 @@ graph = {'집':{'학원':9, '슈퍼마켓':10, '미용실':5},
          '학교':{'은행':2, '학원':12},
          '학원':{'집':9, '슈퍼마켓':7, '은행':7, '학교':12}}
 
-::
+.. code::python
 
 def Dijkstra(graph,start,end):
     router=dict()
