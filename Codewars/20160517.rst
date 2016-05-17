@@ -1,0 +1,66 @@
+Format a string of names like 'Bart, Lisa & Maggie'.
+====================================================
+
+Given: an array containing hashes of names
+
+Return: a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
+
+Example:
+
+namelist([ {'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'} ])
+# returns 'Bart, Lisa & Maggie'
+
+namelist([ {'name': 'Bart'}, {'name': 'Lisa'} ])
+# returns 'Bart & Lisa'
+
+namelist([ {'name': 'Bart'} ])
+# returns 'Bart'
+
+namelist([])
+# returns ''
+
+.. code-block:: python
+
+    def namelist(names):
+        # your code here
+        if names:
+            last_name = names[-1]['name']
+            # print(last_name)
+            return_string = ''
+            if last_name == names[0]['name']:
+                return names[0]['name']
+            for name in names:
+                # print(name)
+                if name['name'] == last_name and return_string != '':
+                    # print(return_string[-2])
+                    return_string = return_string[:-2] + ' & ' + name['name']
+                else:
+                    return_string += name['name']+', '
+
+            print(return_string)
+            return return_string
+        else:
+            return ''
+
+라고 Submit하였으나
+
+.. code-block:: python
+
+    def namelist(names):
+        if len(names) > 1:
+            return '{} & {}'.format(', '.join(name['name'] for name in names[:-1]),
+                                    names[-1]['name'])
+        elif names:
+            return names[0]['name']
+        else:
+            return ''
+
+라는 Best Practices를 발견하였다.
+
+처음 names의 길이를 알기위해 names.len을 써서 오류가나서 다음과 같이 string에 추가하는 방식으로 했는데
+list형의 길이를 알기위해서는 len(names)와 같이 써야한다.
+
+또한 이 문제를 풀면서 format을 string이 아닌 print함수에 붙는것으로 잘 못 생각하여
+string을 만들어 문자를 추가하는 식으로하여 return 해주었다.
+
+잘 못 알고 있던 것들을 다시 바로 잡아야겠다.
