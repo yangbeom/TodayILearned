@@ -1,5 +1,7 @@
-#Today I Learned
-20160516 - 'Dijkstra Algorithm'_.
+Today I Learned
+================
 
-.. _'Dijkstra Algorithm': Algorithm/Dijkstra Algorithm
+20160516 - `Dijkstra Algorithm`_.
+
+.. _Dijkstra Algorithm: Algorithm/Dijkstra Algorithm.rst
 
