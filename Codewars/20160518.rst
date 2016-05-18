@@ -1,0 +1,39 @@
+Longest Palindrome
+==================
+
+Find the length of the longest substring in the given string s that is the same in reverse.
+
+As an example, if the input was “I like racecars that go fast”, the substring **(racecar)** length would be 7.
+
+If the length of the input string is 0, return value must be 0.
+
+Example:
+
+::
+
+    "a" -> 1
+    "aab" -> 2
+    "abcde" -> 1
+    "zzbaabcd" -> 4
+    "" -> 0
+앞으로 읽어도 뒤로 읽어도 같은것을 찾아 그 길이를 리턴해주는 문제
+
+for문 2개 사용하여 원하는 값은 얻어 냈으나 Timeout
+
+.. code-block:: python
+
+    def longest_palindrome (s):
+        longest = 0
+        for left in xrange(len(s)):
+            for right in xrange(len(s), left, -1):
+                if s[left:right] in (s[left:right])[::-1]:
+                    longest = max(right-left, longest)
+                    break
+        return longest
+bestpractices로 올라온 소스
+
+내 소스와 가장큰 차이점은 in을 사용하여 값을 비교했다는것과
+
+`s[right:left:-1]`이 아닌`(s[left:right])[::-1]`를 이용하여 reverse 했다는점
+
+두번째 for문에서 len(s)부터 left까지가 아닌 len(s)부터 0까지 진행하였다는점
