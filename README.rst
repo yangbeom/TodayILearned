@@ -7,8 +7,7 @@ Today I Learned
 
 20160518 - `Longest Palindrome`_.
 
-20160519 - `Validate Credit Card Number`_.
-         - `The Luhn Algorithm`_.
+20160519 - `Validate Credit Card Number`_, `The Luhn Algorithm`_.
 
 
 
