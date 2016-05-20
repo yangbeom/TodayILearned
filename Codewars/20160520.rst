@@ -1,0 +1,62 @@
+Double Cola
+===========
+
+Sheldon, Leonard, Penny, Rajesh and Howard are in the queue for a "Double Cola" drink vending machine;
+
+there are no other people in the queue.
+
+The first one in the queue (Sheldon) buys a can, drinks it and doubles!
+
+The resulting two Sheldons go to the end of the queue.
+
+Then the next in the queue (Leonard) buys a can, drinks it and gets to the end of the queue as two Leonards, and so on.
+
+For example, Penny drinks the third can of cola and the queue will look like this:
+::
+
+    Rajesh, Howard, Sheldon, Sheldon, Leonard, Leonard, Penny, Penny
+Write a program that will return the name of a man who will drink the n-th cola.
+
+Note that in the very beginning the queue looks like that:
+::
+
+    Sheldon, Leonard, Penny, Rajesh, Howard
+Input
+
+The input data consist of an array which contains five names, and single integer n.
+::
+
+    (1 ≤ n ≤ 1000000000).
+Output / Examples
+
+Return the single line — the name of the person who drinks the n-th can of cola. The cans are numbered starting from 1.
+
+Please note that you should spell the names like this: "Sheldon",
+
+"Leonard", "Penny", "Rajesh", "Howard" (without the quotes).
+
+In that order precisely the friends are in the queue initially.
+::
+
+    whoIsNext(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 1)=="Sheldon"
+    whoIsNext(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 52)=="Penny"
+    whoIsNext(["Sheldon", "Leonard", "Penny", "Rajesh", "Howard"], 7230702951)=="Leonard"
+자판기에 순서대로 콜라를 뽑아 먹으면 리스트 마지막에 그 이름을 2개 추가하는것이다.
+
+whoIsNext(순서리스트,n번) 을 넣어 n번째에 누가 먹는지 찾는 문제
+
+def whoIsNext(names, r):
+    # your code
+    i = 0
+    while r>0:
+        r= r-(2**i)*5
+        i+=1
+    return names[int(r/2**(i-1))-1]
+
+나는 규칙을 찾아서 풀었다.
+
+n번째에 마시는 콜라의 양은 5명이서 2^n-1 먹기 때문에 5*2**i를 이용하여 총마시는 양을 구하여 r에서 빼주었다.
+
+r이 음수가 되는순간 이전 n-1까지 끝까지 먹고 n번중간에 누군가에게서 짤린다는것 을 이용하여 구하였다.
+
+다른 소스와 비교해보았을때 지금까지 진행해온 소스중에 가장 bestpractice와 유사한것같다.

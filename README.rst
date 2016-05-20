@@ -1,19 +1,15 @@
 Today I Learned
 ================
 
-20160516 - `Dijkstra Algorithm <Algorithm/Dijkstra_Algorithm.rst>`_.
+20160516 - `Dijkstra Algorithm <Algorithm/Dijkstra_Algorithm.rst>`_ / Requests index.rst 50%번역.
 
-20160517 - `Format a string of names like 'Bart, Lisa & Maggie'`_.
+20160517 - `Format a string of names like 'Bart, Lisa & Maggie' <Codewars/20160517.rst>`_ / Requests index.rst 100%번역.
 
-20160518 - `Longest Palindrome`_.
+20160518 - `Longest Palindrome <Codewars/20160518.rst>`_ / Requests api.rst 50%번역.
 
-20160519 - `Validate Credit Card Number`_ / `The Luhn Algorithm`_.
+20160519 - `Validate Credit Card Number <Codewars/20160519.rst>`_
+/ `The Luhn Algorithm <Algorithm/The_Luhn_Algorithm.rst>`_ / Requests api.rst 100%번역.
 
+20160520 - `Double Cola <Codewars/20160520.rst>`_
+/ Requests faq.rst, out-there.rst, recommended.rst, release-process.rst 100%번역.
 
-
-
-
-.. _Format a string of names like 'Bart, Lisa & Maggie': Codewars/20160517.rst
-.. _Longest Palindrome: Codewars/20160518.rst
-.. _Validate Credit Card Number: Codewars/20160519.rst
-.. _The Luhn Algorithm: Algorithm/The_Luhn_Algorithm.rst
