@@ -1,7 +1,7 @@
 Today I Learned
 ================
 
-20160516 - `Dijkstra Algorithm<Algorithm/Dijkstra_Algorithm.rst>`_.
+20160516 - `Dijkstra Algorithm <Algorithm/Dijkstra_Algorithm.rst>`_.
 
 20160517 - `Format a string of names like 'Bart, Lisa & Maggie'`_.
 
