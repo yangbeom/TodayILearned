@@ -45,14 +45,15 @@ In that order precisely the friends are in the queue initially.
 
 whoIsNext(순서리스트,n번) 을 넣어 n번째에 누가 먹는지 찾는 문제
 
-def whoIsNext(names, r):
-    # your code
-    i = 0
-    while r>0:
-        r= r-(2**i)*5
-        i+=1
-    return names[int(r/2**(i-1))-1]
+.. code-block:: python
 
+    def whoIsNext(names, r):
+        # your code
+        i = 0
+        while r>0:
+            r= r-(2**i)*5
+            i+=1
+        return names[int(r/2**(i-1))-1]
 나는 규칙을 찾아서 풀었다.
 
 n번째에 마시는 콜라의 양은 5명이서 2^n-1 먹기 때문에 5*2**i를 이용하여 총마시는 양을 구하여 r에서 빼주었다.

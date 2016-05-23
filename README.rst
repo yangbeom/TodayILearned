@@ -13,3 +13,6 @@ Today I Learned
 20160520 - `Double Cola <Codewars/20160520.rst>`_
 / Requests faq.rst, out-there.rst, recommended.rst, release-process.rst 100%번역.
 
+20160523 - `Your order, please <Codewars/20160523.rst>`_ / Requests support.rst,updates.rst 100%번역, vulnerabilities.rst 30%번역
+
+
