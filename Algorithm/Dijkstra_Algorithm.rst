@@ -2,7 +2,7 @@ Dijkstra Algorithm(다익스트라 알고리즘)
 =============================
 가중치가 있는 그래프에서 최단경로를 찾는 알고리즘
 
-.. image:: image/dijkstara0.jpg
+.. image:: ../Image/dijkstara0.jpg
 
 이미지를 graph화 시켜놓은것
 
