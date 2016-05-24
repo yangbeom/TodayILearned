@@ -1,0 +1,36 @@
+Array.diff
+==========
+Your goal in this kata is to implement an difference function, which subtracts one list from another.
+
+It should remove all values from list a, which are present in list b.
+
+array_diff([1,2],[1]) == [2]
+If a value is present in b, all of its occurrences must be removed from the other:
+
+array_diff([1,2,2,2,3],[2]) == [1,3]
+
+1번째 list중 2번째 list에 없는것들만 추려내서 return 해주는 문제이다
+
+.. code-block:: python
+
+    def array_diff(a, b):
+        # your code here
+        if b:
+            for i in b:
+                while i in a:
+                    a.remove(i)
+
+        return a
+라고 작성했다.
+
+사실 lambda식을 사용해서 해보려 했는데 아직 lambda식을 마음대로 활용하지 못하여 실패하였다.
+
+다음은 BestPractice이다.
+.. code-block:: python
+
+    def array_diff(a, b):
+        return [x for x in a if x not in b]
+
+lambda를 이용하지 않고도 list를 만들었다.
+
+list를 만들때 for와 if문과같은 제어문을 사용하는법을 잘 알아둬야할것같다.
