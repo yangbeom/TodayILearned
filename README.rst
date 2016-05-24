@@ -17,5 +17,5 @@ Today I Learned
 vulnerabilities.rst 30%번역
 
 20160523 - `Array.diff <Codewars/20160524.rst>`_ / Requests vulnerabilities.rst, authors.rst 100%번역,
-Philosophy.rst 50%번역
+Philosophy.rst 50%번역 / 블로그 코드 수정
 
