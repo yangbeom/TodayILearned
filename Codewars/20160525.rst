@@ -1,0 +1,54 @@
+Linked Lists - Length & Count
+============================
+Implement Length() to count the number of nodes in a linked list.
+::
+
+    length(null) === 0
+    length(1 -> 2 -> 3 -> null) === 3
+Implement Count() to count the occurrences of an integer in a linked list.
+::
+
+    count(null, 1) === 0
+    count(1 -> 2 -> 3 -> null, 1) === 1
+    count(1 -> 1 -> 1 -> 2 -> 2 -> 2 -> 2 -> 3 -> 3 -> null, 2) === 4
+Linked List의 length와 같은 data가 얼마나 있는지 찾는 문제
+
+.. code-block:: python
+
+    class Node(object):
+        def __init__(self, data):
+            self.data = data
+            self.next = None
+
+    def length(node):
+        # Your code goes here.
+        if node:
+            if node.next:
+                return 1+length(node.next)
+            else:
+                return 1
+        else:
+            return 0
+
+    def count(node, data):
+        # Your code goes here.
+        if node:
+            if node.data == data:
+                return 1+count(node.next,data)
+            else:
+                return count(node.next,data)
+        else:
+            return 0
+이렇게 length 함수와 count 함수를 만들었다
+
+bestpractice와의 차이점은 legth함수에서만 약간의 차이가 있었는데
+
+.. code-block:: python
+
+    def length(node):
+        if node:
+          return 1 + length(node.next)
+        return 0
+내가 필요없는 node.next가 있는지 없는지에 대한 연산을 한번 더 한것이다.
+
+어떠한 이유인진 몰라도 이번 Codewars문제는 대략 20점가량 상승하여 7단에서 6단으로 상승!

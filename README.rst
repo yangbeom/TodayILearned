@@ -16,6 +16,8 @@ Today I Learned
 20160523 - `Your order, please <Codewars/20160523.rst>`_ / Requests support.rst,updates.rst 100%번역,
 vulnerabilities.rst 30%번역
 
-20160523 - `Array.diff <Codewars/20160524.rst>`_ / Requests vulnerabilities.rst, authors.rst 100%번역,
+20160524 - `Array.diff <Codewars/20160524.rst>`_ / Requests vulnerabilities.rst, authors.rst 100%번역,
 Philosophy.rst 50%번역 / 블로그 코드 수정
+
+20160525 - `Linked Lists - Length & Count <Codewars/20160525.rst>`_
 
