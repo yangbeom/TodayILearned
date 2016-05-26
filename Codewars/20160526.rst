@@ -33,6 +33,7 @@ Here's how it works (Ruby example given): ::
     => 2
 
 각 자리의 숫자를 합하여 한자리의 숫자로 나타내는 문제이다.
+
 .. code-block:: python
 
     def digital_root(n):
@@ -44,7 +45,8 @@ Here's how it works (Ruby example given): ::
 
 라고 소스를 짰다.
 
-bestpractice로 나온 소스는 다음과 같다
+bestpractice로 나온 소스는 다음과 같다.
+
 .. code-block:: python
 
     def digital_root(n):
