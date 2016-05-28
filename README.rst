@@ -23,3 +23,4 @@ Philosophy.rst 50%번역 / 블로그 코드 수정
 
 20160526 - `Sum of Digits / Digital Root <Codewars/20160526.rst>`_ / Requests todo.rst, philosophy.rst 100%번역,  contributing.rst 10%번역
 
+20160528 - `Human Readable Time <Codewars/20160528.rst>`_
