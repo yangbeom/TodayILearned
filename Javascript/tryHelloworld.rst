@@ -1,4 +1,4 @@
-.. image:: ../Image/tryHelloworld_JS기초.PNG
+.. image:: ../Image/tryHelloworld_JS.PNG
 .. image:: ../Image/tryHelloworld_JS기초.jpg
 .. image:: ../Image/dijkstara.jpg
 
