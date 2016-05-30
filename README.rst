@@ -25,4 +25,4 @@ Philosophy.rst 50%번역 / 블로그 코드 수정
 
 20160528 - `Human Readable Time <Codewars/20160528.rst>`_
 
-20160530 - `tryHelloworld JS기초 수강완료 <Javascript/tryHelloworld.rst>`_
+20160530 - `tryHelloworld JS기초 수강완료 <Javascript/tryHelloworld.rst>`_ / Requests authentication.rst, contributing.rst, install.rst, intro.rst 100%번역, advanced.rst 50%번역
