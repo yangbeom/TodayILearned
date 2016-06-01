@@ -1,0 +1,83 @@
+Human readable duration format
+==============================
+
+Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way.
+
+The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds.
+
+It is much easier to understand with an example: ::
+
+  format_duration(62)    # returns "1 minute and 2 seconds"
+  format_duration(3662)  # returns "1 hour, 1 minute and 2 seconds"
+Note that spaces are important.
+
+Detailed rules
+
+The resulting expression is made of components like 4 seconds, 1 year, etc. In general, a positive integer and one of the valid units of time, separated by a space. The unit of time is used in plural if the integer is greater than 1.
+
+The components are separated by a comma and a space (", "). Except the last component, which is separated by " and ", just like it would be written in English.
+
+A more significant units of time will occur before than a least significant one. Therefore, 1 second and 1 year is not correct, but 1 year and 1 second is.
+
+Different components have different unit of times. So there is not repeated units like in 5 seconds and 1 second.
+
+A component will not appear at all if its value happens to be zero. Hence, 1 minute and 0 seconds is not valid, but it should be just 1 minute.
+
+A unit of time must be used "as much as possible". It means that the function should not return 61 seconds, but 1 minute and 1 second instead. Formally, the duration specified by of a component must not be greater than any valid more significant unit of time.
+
+For the purpose of this Kata, a year is 365 days and a day is 24 hours.
+
+초로 나온 시간을 사람이 읽기 쉽게 년일시분초 로 나타내는 문제
+
+번역을 오래해서그런지 머리가 잘 돌지않아
+.. code-block:: python
+
+    def format_duration(seconds):
+        if seconds ==0:
+            return "now"
+        readable_list = [(seconds/31536000,"year"), ((seconds/86400)%365,"day"), ((seconds/3600)%24,"hour"),((seconds/60)%60,"minute"),(seconds%60,"second")]
+        readable_text = list()
+        for i,t in readable_list:
+            if int(i) != 0:
+                if int(i) ==1:
+                    readable_text.append(str(int(i)) +" "+ t)
+                else:
+                    readable_text.append(str(int(i)) +" "+ t +"s")
+        if len(readable_text)>=2:
+            readable_text.append(readable_text.pop(-2) + " and " + readable_text.pop(-1))
+            return ", ".join(readable_text)
+
+        return " ".join(readable_text)
+과 같이 정답을 맞추기에 급급했던것같다.
+
+bestpractice 는 다음과 같다
+
+.. code-block:: python
+
+    times = [("year", 365 * 24 * 60 * 60),
+             ("day", 24 * 60 * 60),
+             ("hour", 60 * 60),
+             ("minute", 60),
+             ("second", 1)]
+
+    def format_duration(seconds):
+
+        if not seconds:
+            return "now"
+
+        chunks = []
+        for name, secs in times:
+            qty = seconds // secs
+            if qty:
+                if qty > 1:
+                    name += "s"
+                chunks.append(str(qty) + " " + name)
+
+            seconds = seconds % secs
+
+        return ', '.join(chunks[:-1]) + ' and ' + chunks[-1] if len(chunks) > 1 else chunks[0]
+
+이것과 차이점은 머리가 돌아가지 않아 s를 붙일때 쓸대없는 비교를 한번 더했으며
+return 할때 앞에서부터 ', '.join 을 한후 맨마지막에 ' and ' 마지막 문자열을 더하는것
+
+얼추 비슷하긴 했지만 불필요한 부분이 아직 많아 보인다.
