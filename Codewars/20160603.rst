@@ -1,0 +1,68 @@
+Sum of odd numbers + SequenceSum
+================================
+
+Sum of odd numbers
+------------------
+Given the triangle of consecutive odd numbers:
+
+                1
+             3     5
+          7     9    11
+      13    15    17    19
+   21    23    25    27    29
+
+Calculate the row sums of this triangle from the row index (starting at index 1) e.g.:
+::
+
+    row_sum_odd_numbers(1); # 1
+    row_sum_odd_numbers(2); # 3 + 5 = 8
+
+입력된 라인의 합을 구하는 문제
+홀수라는 것에 빠져 모든라인의 합이 n**3 인것을 눈치 채지 못하였다.
+
+.. code-block:: python
+
+    def row_sum_odd_numbers(n):
+        return n**3
+
+SequenceSum
+-----------
+Sum of 'n' Numbers
+
+sum_of_n (or SequenceSum.sumOfN in Java, SequenceSum.SumOfN in C#) takes an integer n and returns a List (an Array in Java/C#) of length abs(n) + 1. The List/Array contains the numbers in the arithmetic series produced by taking the sum of the consecutive integer numbers from 0 to n inclusive.
+
+n can also be 0 or a negative value.
+Wikipedia reference for abs value is available here.
+
+Example:
+
+`5` -> `[0, 1, 3, 6, 10, 15]`
+
+`-5` -> `[0, -1, -3, -6, -10, -15]`
+
+`7` -> `[0, 1, 3, 6, 10, 15, 21, 28]`
+
+.. code-block:: python
+
+    def sum_of_n(n):
+        return_array = [0]
+        if n == 0:
+            return return_array
+        for i in range(1,abs(n)+1) :
+            if n>0:
+                return_array.append(return_array[i-1]+i)
+            elif n<0:
+                return_array.append(return_array[i-1]-i)
+
+        return return_array
+
+라고 짰는데 bestpractice는 다음과 같다.
+
+.. code-block:: python
+
+    def sum_of_n(n):
+        return [(-1 if n < 0 else 1) * sum(xrange(i+1)) for i in xrange(abs(n)+1)]
+
+전행과의 합을 sum(range(1+i)) 로 처리한것 그리고 음수일때 -1을 곱해준것에서 차이가 있다.
+
+오늘은 전체적으로 너무 눈에 보이는것만 생각하다 쉬운방법을 놓쳤다.
