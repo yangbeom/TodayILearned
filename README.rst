@@ -6,7 +6,7 @@ Today I Learned
 20160601 - `Pyramid Slide Down <Codewars/20160601.rst>`_
 20160602 - `Vector class <Codewars/20160602.rst>`_ / jquery ~iterating
 20160603 - `Sum of odd numbers + SequenceSum <Codewars/20160603.rst>`_
-20160607 - `Git update forked repo <ETC/git_update_forked_repo.rst>`_
+20160607 - `Git update forked repo <ETC/git_update_forked_repo.rst>`_ / `webhaacking.kr register <webhacking.kr/register.rst>`_
 `201605 목록 <TOC/201605.rst>`_
 
 
