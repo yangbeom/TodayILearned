@@ -7,6 +7,7 @@ Today I Learned
 20160602 - `Vector class <Codewars/20160602.rst>`_ / jquery ~iterating
 20160603 - `Sum of odd numbers + SequenceSum <Codewars/20160603.rst>`_
 20160607 - `Git update forked repo <ETC/git_update_forked_repo.rst>`_ / `webhaacking.kr register <webhacking.kr/register.rst>`_
+20160608 - `Roman Numerals Encoder <Codewars/20160608.rst>`_ / Requests index.rst,realease-process.rst/api.rst/recommended.rst/faq.rst/out-there.rst 1차수정
 `201605 목록 <TOC/201605.rst>`_
 
 
