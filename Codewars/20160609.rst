@@ -1,0 +1,107 @@
+Sudoku Solution Validator
+=========================
+Sudoku Background
+-----------------
+Sudoku is a game played on a 9x9 grid. The goal of the game is to fill all cells of the grid with digits from 1 to 9, so that each column, each row, and each of the nine 3x3 sub-grids (also known as blocks) contain all of the digits from 1 to 9.
+
+Sudoku Solution Validator
+--------------------------
+Write a function `validSolution` that accepts a 2D array representing a Sudoku board, and returns true if it is a valid solution, or false otherwise. The cells of the sudoku board may also contain 0's, which will represent empty cells. Boards containing one or more zeroes are considered to be invalid solutions.
+
+Examples:
+::
+
+    validSolution([[5, 3, 4, 6, 7, 8, 9, 1, 2],
+                   [6, 7, 2, 1, 9, 5, 3, 4, 8],
+                   [1, 9, 8, 3, 4, 2, 5, 6, 7],
+                   [8, 5, 9, 7, 6, 1, 4, 2, 3],
+                   [4, 2, 6, 8, 5, 3, 7, 9, 1],
+                   [7, 1, 3, 9, 2, 4, 8, 5, 6],
+                   [9, 6, 1, 5, 3, 7, 2, 8, 4],
+                   [2, 8, 7, 4, 1, 9, 6, 3, 5],
+                   [3, 4, 5, 2, 8, 6, 1, 7, 9]])
+//Example 1 should return true
+::
+
+    validSolution([[5, 3, 4, 6, 7, 8, 9, 1, 2],
+                   [6, 7, 2, 1, 9, 0, 3, 4, 8],
+                   [1, 0, 0, 3, 4, 2, 5, 6, 0],
+                   [8, 5, 9, 7, 6, 1, 0, 2, 0],
+                   [4, 2, 6, 8, 5, 3, 7, 9, 1],
+                   [7, 1, 3, 9, 2, 4, 8, 5, 6],
+                   [9, 0, 1, 5, 3, 7, 2, 1, 4],
+                   [2, 8, 7, 4, 1, 9, 6, 3, 5],
+                   [3, 0, 0, 4, 8, 1, 1, 7, 9]])
+//Example 2 should returns false
+
+입력된 9x9 Sudoku가 맞는지 아닌지 확인하는 문제
+
+.. code-block:: python
+
+    def validSolution(board):
+    valid=[1,2,3,4,5,6,7,8,9]
+
+    for i in range(9):
+        if not i%3:
+            parts = [[], [], []]
+        parts[0] += board[i][0:3]
+        parts[1] += board[i][3:6]
+        parts[2] += board[i][6:9]
+
+        if i%3==2 :
+            if valid == sorted(parts[0]) == sorted(parts[1]) == sorted(parts[2]):
+                pass
+            else:
+                return False
+
+        col = [board[x][i] for x in range(9)]
+        row = board[i]
+
+        if valid == sorted(row) == sorted(col) :
+            pass
+        else:
+            return False
+    return True
+
+sorted를 주로 이용해서 소스를 작성했다.
+가로와 세로를 비교하고 %연산자를 이용하여 3x3을 만들고 타당한지 확인하였다.
+
+다음은 BestPractice이다.
+
+.. code-block:: python
+
+    def validSolution(board):
+        boxes = validate_boxes(board)
+        cols = validate_cols(board)
+        rows = validate_rows(board)
+        return boxes and cols and rows
+
+    def validate_boxes(board):
+        for i in range(0, 9, 3):
+            for j in range(0, 9, 3):
+                nums = board[i][j:j+3] + board[i+1][j:j+3] + board[i+2][j:j+3]
+                if not check_one_to_nine(nums):
+                    return False
+        return True
+
+    def validate_cols(board):
+        transposed = zip(*board)
+        for row in transposed:
+            if not check_one_to_nine(row):
+                return False
+        return True
+
+    def validate_rows(board):
+        for row in board:
+            if not check_one_to_nine(row):
+                return False
+        return True
+
+
+    def check_one_to_nine(lst):
+        check = range(1,10)
+        return sorted(lst) == check
+
+check_one_to_nine 라는 함수를 만들어 똑같이 sorted를 이용하여 체크하였는데
+가로따로 세로따로 3x3따로 함수를 만들었다.
+나와 다른점은 세로를 구할때 zip(*board)를 이용하여 세로를 만들었다는점 외에는 다른점은 모르겠다.
