@@ -17,6 +17,8 @@ Today I Learned
 
 20160610 - `Josephus problem <Codewars/20160610.rst>`_
 
+20166013 - `Strings Mix <Codewars/20160613.rst>`_
+
 `201605 목록 <TOC/201605.rst>`_
 
 
