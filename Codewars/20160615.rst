@@ -1,0 +1,30 @@
+IP Validation
+=============
+Write an algorithm that will identify valid IPv4 addresses in dot-decimal format. Input to the function is guaranteed to be a single string.
+
+Examples of valid inputs: 1.2.3.4 123.45.67.89
+
+Examples of invalid inputs: 1.2.3 1.2.3.4.5 123.456.78.90 123.045.067.089
+
+.. code-block:: python
+
+    def is_valid_IP(strng):
+        if len(strng.replace(' ', '').split('.')) == 4:
+            for i in strng.split('.'):
+                if not i.isdigit():
+                    return False
+                else:
+                    if not (0<=int(i)<=255):
+                        return False
+                    else:
+                        if len(i)>1 and i[0]=='0':
+                                return False
+            return True
+        return False
+
+이번 문제는 ip주소가 맞는지 확인하는 문제
+몸상태가 안좋아서 너무 소스가 이상한거같다.
+
+beatpractice에서 좋았던점은
+1자리가 아닐때 앞이 0으로 시작하는지 확인하는것을 i == int(i) 로 비교한것이다
+
