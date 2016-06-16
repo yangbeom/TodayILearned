@@ -11,7 +11,7 @@ Today I Learned
 
 20160607 - `Git update forked repo <ETC/git_update_forked_repo.rst>`_ / `webhaacking.kr register <webhacking.kr/register.rst>`_
 
-20160608 - `Roman Numerals Encoder <Codewars/20160608.rst>`_ / Requests index.rst,realease-process.rst/api.rst/recommended.rst/faq.rst/out-there.rst 1차수정
+20160608 - `Roman Numerals Encoder <Codewars/20160608.rst>`_ / Requests index.rst,realease-process.rst,api.rst,recommended.rst,faq.rst,out-there.rst 1차수정
 
 20160609 - `jQuery selector <Javascript/jQuery_selector.rst>`_ / `Sudoku Solution  Validator <Codewars/20160609.rst>`_
 
@@ -21,7 +21,9 @@ Today I Learned
 
 20160614 - `Django Girls Tutorial <http://tutorial.djangogirls.org/ko/>`_
 
-20160615 - `IP Validation <Codewars/201615.rst>`_
+20160615 - `IP Validation <Codewars/20160615.rst>`_
+
+20160616 - `RGB To Hex Conversion / Simple Pig Latin <Codewars/20160616.rst>`_ /Requests support.rst, vulnerabilities.rst, authors.rst 1차 수정
 
 `201605 목록 <TOC/201605.rst>`_
 

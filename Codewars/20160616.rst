@@ -1,0 +1,56 @@
+RGB To Hex Conversion
+=====================
+
+The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value.
+
+The following are examples of expected output values:
+::
+
+    rgb(255, 255, 255) # returns FFFFFF
+    rgb(255, 255, 300) # returns FFFFFF
+    rgb(0,0,0) # returns 000000
+    rgb(148, 0, 211) # returns 9400D3
+
+이번 문제는 RGB값을 Hex로 출력해주는값
+
+testcase에 보니 255를 넘는 값은 FF로 0보다 작은수는 00으로 나타내주고있었다.
+
+따라서 입력받은 값을 0 ~ 255로 만들어 주어 출력해주면 되었다.
+
+.. code-block:: python
+
+    def rgb(r, g, b):
+        r = 0 if r < 0 else r if r < 255 else 255
+        g = 0 if g < 0 else g if g < 255 else 255
+        b = 0 if b < 0 else b if b < 255 else 255
+        return "{:02x}{:02x}{:02x}".format(r,g,b)
+
+나는 if else문으로 255가 넘으면 255로 0보다 작으면 0으로 그렇지않으면 기존값으로 넣어 출력해주었다.
+
+Bestpractice에서는 저 비교문을 min(255,max(0,r)) 로 해주었다.
+
+min과 max를 잘 사용하지 않아서 저걸 이용하여 최대값 최소값으로 설정하는걸 떠올리지 못하였다.
+
+이게 왜 `5kyu` 문제인지는 잘 모르겠다.
+
+Simple Pig Latin
+================
+
+Move the first letter of each word to the end of it, then add 'ay' to the end of the word.
+::
+
+    pig_it('Pig latin is cool') # igPay atinlay siay oolcay
+단어의 첫자리를 마지막으로 옮기고 끝에 ay를 붙이는 문제
+
+.. code-block:: python
+
+    def pig_it(text):
+        # your code here
+        text_list = [x[1:]+x[0]+"ay" if x.isalnum() else x for x in text.split(' ')]
+
+        return " ".join(text_list)
+간단히 split하면서 첫문자 x[0]와 나머지 문자 x[1:]을 바꾸어주고 ay를 붙였다.
+
+중간에 isalnum()은 test문에 ?가 있었는데 ?에도 ay가 붙는 문제가 생겨서 추가했다.
+
+submit을 하고나니 딱히 text_list라는 변수가 필요없어 join뒤로 옮기려했는데 어떤이유에서인지 submit이 되지 않았다.
