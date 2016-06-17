@@ -25,6 +25,8 @@ Today I Learned
 
 20160616 - `RGB To Hex Conversion / Simple Pig Latin <Codewars/20160616.rst>`_ /Requests support.rst, vulnerabilities.rst, authors.rst 1차 수정
 
+20160617 - `Multiples of 3 and 5 <Codewars/20160617.rst>`_
+
 `201605 목록 <TOC/201605.rst>`_
 
 
