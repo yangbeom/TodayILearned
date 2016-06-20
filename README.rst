@@ -27,6 +27,8 @@ Today I Learned
 
 20160617 - `Multiples of 3 and 5 <Codewars/20160617.rst>`_
 
+20160620 - `All that is open must be closed... <Codewars/20160620.rst>`_ /Requests contributing.rst, philosophy.rst, todo.rst, advanced.rst 1차수정/ instagrambot 리팩토링
+
 `201605 목록 <TOC/201605.rst>`_
 
 
