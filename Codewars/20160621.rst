@@ -1,0 +1,31 @@
+Where my anagrams at?
+=====================
+What is an anagram? Well, two words are anagrams of each other if they both contain the same letters. For example: ::
+
+    'abba' & 'baab' == true
+
+    'abba' & 'bbaa' == true
+
+    'abba' & 'abbba' == false
+
+Write a function that will find all the anagrams of a word from a list. You will be given two inputs a word and an array with words. You should return an array of all the anagrams or an empty array if there are none. For example:
+::
+
+    anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
+
+    anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
+
+    anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
+
+오늘 문제는 word의 문자들로 만들어진 문자인지 찾아내는 문제이다.
+
+.. code-block:: python
+
+    def anagrams(word, words):
+        return [i for i in words if sorted(word) == sorted(i)]
+
+간단하게 word을 sorted함수로 차례대로 정렬하여 words를 sorted함수로 처리한것과 결과값이 같은지를 보고
+리턴해주었다.
+
+bestpractice와 오늘은 같았다.
+
