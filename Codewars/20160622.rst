@@ -1,0 +1,49 @@
+Mod4 Regex
+==========
+
+You are to write a Regular Expression that matches any string with at least one number divisible by 4 (with no remainder). In most languages, you could do this easily by using number % 4 == 0. How would you do it with Regex?
+
+A number will start with [ and end with ]. They may (or may not) include a plus or minus symbol at the start; this should be taken into account. Leading zeros may be present, and should be ignored (no octals here ;P). There may be other text in the string, outside of the number; this should also be ignored. Also, all numbers will be integers; any floats should be ignored.
+
+If there are no valid numbers defined as above, there should be no match made by your regex.
+
+So here are some examples: ::
+
+"[+05620]" // 5620 is divisible by 4 (valid)
+"[+05621]" // 5621 is not divisible by 4 (invalid)
+"[-55622]" // -55622 is not divisible by 4 (invalid)
+"[005623]" // 5623 invalid
+"[005624]" // 5624 valid
+"[-05628]" // valid
+"[005632]" // valid
+"[555636]" // valid
+"[+05640]" // valid
+"[005600]" // valid
+"the beginning [0] ... [invalid] numb[3]rs ... the end" // 0 is valid
+"No, [2014] isn't a multiple of 4..."  // 2014 is invalid
+"...may be [+002016] will be." // 2016 is valid
+
+오늘은 정규식을 이용하여 4의 배수인지 아닌지를 찾는 문제이다.
+
+4의 배수를 찾는것은 100이 4의 배수임을 이용하여 100의 자리 아래가 4로 나누어 떨어지면 4의 배수이다.
+
+4의 배수의 공통점을 찾아보면 1의자리가 2와 6일땐 10의자리가 홀수이고
+
+1의자리가 4와 8, 0일땐 10의자리가 짝수이다.
+
+따라서 다음과 같이 해결하였다.
+
+.. code-block:: python
+
+    import re
+
+    class Mod:
+        mod4 = re.compile(r'''(?x)
+        .* \[ [+-]?
+            (   \d*
+                (   (?: [13579]  [26] )
+                |   (?: [02468] [048] )
+                )
+            | [048]
+            )
+        \]''')

@@ -29,7 +29,9 @@ Today I Learned
 
 20160620 - `All that is open must be closed... <Codewars/20160620.rst>`_ /Requests contributing.rst, philosophy.rst, todo.rst, advanced.rst 1차수정/ instagrambot 리팩토링
 
-20160621 - `Where my anagrams at? <Codewars/20160621.rst>`_ /Requests authentication.rst, install.rst, intro.rst, quickstart.rst 1차 수정 / `Django Web Development with Python 1,2,3 <https://www.youtube.com/playlist?list=PLQVvvaa0QuDeA05ZouE4OzDYLHY-XH-Nd>`_
+20160621 - `Where my anagrams at? <Codewars/20160621.rst>`_ /Requests authentication.rst, install.rst, intro.rst, quickstart.rst 1차 수정 / `Django Web Development with Python 1 ~ 3 <https://www.youtube.com/playlist?list=PLQVvvaa0QuDeA05ZouE4OzDYLHY-XH-Nd>`_
+
+20160622 - `Mod4 Regex <Codewars/20160622.rst>`_ / `Django Web Development with Python 4 ~ 12 <https://www.youtube.com/playlist?list=PLQVvvaa0QuDeA05ZouE4OzDYLHY-XH-Nd>`_ / `Django manytomany출력, loaddata<Django/Django.rst>`_
 
 `201605 목록 <TOC/201605.rst>`_
 
