@@ -1,0 +1,33 @@
+Convert PascalCase string into snake_case
+=========================================
+Complete the function/method so that it takes CamelCase string and returns the string in snake_case notation. Lowercase characters can be numbers. If method gets number, it should return string.
+
+CamelCase를 snake_case 로 변환하는 문제이다
+
+.. code-block:: python
+
+    def to_underscore(string):
+    # your code here
+
+    return ''.join(["_"+x.lower() if x.isupper() else x for x ini str(string)])[1:]
+
+나는 다음과 같이 해결했다.
+
+대문자인지 아닌지 체크하고 `_` 를 붙여주었다.
+
+단 매번 첫문자는 대문자이기때문에 붙는 `_` 를 제거하기위해 return 시 [1:] 을 붙여주었다.
+
+다음을 bestpractice 이다.
+
+.. code-block:: python
+
+    def to_underscore(string):
+        string = str(string)
+        camel_case = string[0].lower()
+        for c in string[1:]:
+            camel_case += '_{}'.format(c.lower()) if c.isupper() else c
+        return camel_case
+
+따로 정규식을 import 한것을 제외한것중 최상이다.
+
+처음문자를 lower를 이용하여 변환해준후 나머지는 같은 방법으로 진행하였다.
