@@ -34,6 +34,9 @@ Today I Learned
 20160622 - `Mod4 Regex <Codewars/20160622.rst>`_ / `Django Web Development with Python 4 ~ 12 <https://www.youtube.com/playlist?list=PLQVvvaa0QuDeA05ZouE4OzDYLHY-XH-Nd>`_ / `Django manytomany출력, loaddata<Django/Django.rst>`_
 
 20160623 - `Convert PascalCase string into snake_case <Codewars/20160623.rst>`_ / linuxmin 17.03 설치 + 세팅후 Codewars를 풀어보았다. 하드웨어 지원이 재대로 안되는건지 메모리나 cpu 점유율은 낮으나 끊기는 현상이 자주 발생 다시 windows로 복귀.
+
+20160624 - `Efficient Power Modulo n <Codewars/20160624.rst>`_
+
 `201605 목록 <TOC/201605.rst>`_
 
 
