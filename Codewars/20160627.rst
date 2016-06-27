@@ -1,0 +1,49 @@
+Valid Parentheses
+=================
+
+Write a function called validParentheses that takes a string of parentheses, and determines if the order of the parentheses is valid. validParentheses should return true if the string is valid, and false if it's invalid.
+
+Examples: ::
+
+    validParentheses( "()" ) => returns true
+    validParentheses( ")(()))" ) => returns false
+    validParentheses( "(" ) => returns false
+    validParentheses( "(())((()())())" ) => returns true
+
+All input strings will be nonempty, and will only consist of open parentheses '(' and/or closed parentheses ')'
+
+()가 잘맞는지 확인하는 문제이다.
+
+
+.. code-block:: python
+
+    def valid_parentheses(string):
+        #your code here
+        patterns = list()
+        for i in range(len(string)):
+            if string[i] == '(' or string[i] ==')':
+                if not patterns:
+                    patterns.append(string[i])
+                else:
+                    if patterns[-1] == '(' and string[i] == ')':
+                        patterns.pop()
+                    else:
+                        patterns.append(string[i])
+
+        return not patterns
+
+전에 이와 비슷한 문제를 풀었던게 생각나서 이번에는 stack을 이용하는 방식으로 풀어보았다.
+
+bestpractice는 다음과 같다.
+
+.. code-block:: python
+
+    def valid_parentheses(string):
+        cnt = 0
+        for char in string:
+            if char == '(': cnt += 1
+            if char == ')': cnt -= 1
+            if cnt < 0: return False
+        return True if cnt == 0 else False
+
+이렇게하면 처음에 `)` 로 시작해도 `ex> )(` 갯수만 맞다면 True 를 반환해 줄 것인데 문제에 답이 있었다.
