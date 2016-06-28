@@ -1,0 +1,85 @@
+Phone Directory
+===============
+
+John keeps a backup of his old personal phone book as a text file. On each line of the file he can find the phone number (formated as `+X-abc-def-ghij` where X stands for one or two digits), the corresponding name between `<` and `>` and the address.
+
+Unfortunately everything is mixed, things are not always in the same order, lines are cluttered with non-alpha-numeric characters.
+
+Examples of John's phone book lines:
+
+`"/+1-541-754-3010 156 Alphand_St. <J Steeve>\n"`
+
+`" 133, Green, Rd. <E Kustur> NY-56423 ;+1-541-914-3010!\n"`
+
+`"<Anastasia> +48-421-674-8974 Via Quirinal Roma\n"`
+
+Could you help John with a program that, given the lines of his phone book and a phone number returns a string for this number : `"Phone => num, Name => name, Address => adress"`
+
+Examples: ::
+
+    s = "/+1-541-754-3010 156 Alphand_St. <J Steeve>\n 133, Green, Rd. <E Kustur> NY-56423 ;+1-541-914-3010!\n"
+
+    phone(s, "1-541-754-3010") should return "Phone => 1-541-754-3010, Name => J Steeve, Address => 156 Alphand St."
+
+It can happen that, for a few phone numbers, there are many people for a phone number -say `nb`- , then
+
+return : `"Error => Too many people: nb"`
+
+or it can happen that the number nb is not in the phone book, in that case
+
+return: `"Error => Not found: nb"`
+
+You can see other examples in the test cases.
+
+stirng으로 들어오는 전화번호부에서 전화번호와 이름 그리고 주소를 분리해내는 프로그램이다.
+
+.. code-block:: python
+
+    import re
+
+    def phone(strng, num):
+        # your code
+        pname = re.compile(r'<(?P<name>.*)>')
+        paddr = re.compile(r'[_\\/!,;]')
+        rbook = list()
+        for i in strng.split('\n'):
+            if num in i:
+                rbook.append(num)
+                rbook.append(pname.search(i).group("name"))
+                rbook.append(' '.join([paddr.sub(' ',x) for x in i.split(' ') if not num in x and not '<' in x and not '>' in x and x]))
+        if len(rbook)>3:
+            return "Error => Too many people: {}".format(num)
+        elif not rbook:
+            return "Error => Not found: {}".format(num)
+        else:
+            return "Phone => {p[0]}, Name => {p[1]}, Address => {p[2]}".format(p = rbook)
+
+우선 정규식으로 이름을 빼올것을 정의하고
+' ' 로 스플릿하여 < > 그리고 전화번호가 포함되어 있지 않은것들을 list에 넣었다.
+
+그후 불필요한것들을 삭제후 출력해주었다.
+
+이때 출력값이 phone name address 즉 3개가 넘는것은 Error Too many eople로
+비어있다면 Error not found로 처리해주었다.
+
+다음은 bestpractice이다.
+.. code-block:: python
+
+    from re import sub
+
+    def phone(dir, num):
+        if dir.count("+" + num) == 0:
+            return "Error => Not found: " + num
+
+        if dir.count("+" + num) > 1:
+            return "Error => Too many people: " + num
+
+        for line in dir.splitlines():
+            if "+" + num in line:
+                name = sub(".*<(.*)>.*", "\g<1>", line)
+                line = sub("<" + name + ">|\+" + num, "", line)
+                address = " ".join(sub("[^a-zA-Z0-9\.-]", " ", line).split())
+                return "Phone => %s, Name => %s, Address => %s" % (num, name, address)
+
+우선 안에 전화번호가 있는지 없는지를 이용하여 Error을 처리해준후 나머지를 진행했는데
+정규식의 sub를 이용하여 하나하나씩 제거해주었다.

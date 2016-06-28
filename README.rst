@@ -39,6 +39,8 @@ Today I Learned
 
 20160627 - `Valid Parentheses <Codewars/20160627.rst>`_ / Requests 번역 완료 + translation-team 문의
 
+20160628 - `Phone Directory <Codewars/20160628.rst>`_
+
 `201605 목록 <TOC/201605.rst>`_
 
 
