@@ -43,7 +43,7 @@ Today I Learned
 
 20160629 - `Caesar Cipher Helper <Codewars/20160629.rst>`_
 
-20160630 - `CSharp 기초문법 <CSharp/Csharpbasic.rst>`_ & `<CSharpstudy.com <http://www.csharpstudy.com/>`_
+20160630 - `CSharp 기초문법 <CSharp/Csharpbasic.rst>`_ & `CSharpstudy.com <http://www.csharpstudy.com/>`_
 
 `201605 목록 <TOC/201605.rst>`_
 
