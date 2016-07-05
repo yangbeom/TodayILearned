@@ -21,6 +21,7 @@ Package Control 설치
 `Preferences` - `Settings - Users` 에 들어가 설정을 한다.
 
 개인적으로 사용하는것들은 다음과 같다.
+
 "draw_white_space": "all"
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
