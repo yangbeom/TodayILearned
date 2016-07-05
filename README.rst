@@ -7,6 +7,8 @@ Today I Learned
 
 20160704 - 포트폴리오를 위한 1학년 자료 정리
 
+20160705 - Sublime Text Setup 정리
+
 `201605 목록 <TOC/201605.rst>`_
 `201606 목록 <TOC/201606.rst>`_
 
