@@ -9,7 +9,10 @@ Today I Learned
 
 20160705 - `Sublime Text Setup 정리 <SublimeText.rst>`_
 
+20160706 - `Lambdas as a mechanism for Open/Closed <Codewars/20160706.rst>`_
+
 `201605 목록 <TOC/201605.rst>`_
+
 `201606 목록 <TOC/201606.rst>`_
 
 번역
