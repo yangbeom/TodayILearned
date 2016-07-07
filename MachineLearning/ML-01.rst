@@ -1,0 +1,71 @@
+ML - 01
+=======
+
+Machine Learning
+----------------
+
+- Limitations of explict programming
+    - Spam filter
+    - Automatic driving
+- Machine learning : "Field of study that gives computers the ability to learn without being explicitly programmed" (Arthur Samuel,1959)
+
+프로그램이긴한데 프로그램이 학습을 해서 무엇인가를 배우는것.
+
+Supervised/Unsupervised learning
+--------------------------------
+
+- Supervised learning : 정해져있는 데이터(training set)을 가지고 학습하는것.
+
+    ex) 고양이사진들, 강아지사진들 을 주고 이것은 고양이다, 이것은 강아지다 를 가지고 학습
+
+- Unsupervised learning : 일일히 정해져있는 데이터를 줄 수 없는것들. 데이터를 보고 스스로 학습한다.
+
+    ex) Google News Grouping, Word clustering
+
+Supervised learning
+~~~~~~~~~~~~~~~~~~~
+
+- Image labeling
+- Email spam filter
+- Predicting exam score
+
+Training data set
+-----------------
+
+Lable을 가지고 Machine Learning이 학습.
+
+그 학습을 통하여 결과값을 추측함.
+
+Types of supervised learning
+----------------------------
+
+시험 점수(1-100)를 예측 - regression
+
+.. table::
+
+    x(hours)|y(score)
+    10|90
+    9|80
+    3|50
+    2|30
+
+
+pass/non-pass 로 나누어 예측 - binary classification
+
+.. table::
+
+    x(hours)|y(score)
+    10|P
+    9|P
+    3|F
+    2|F
+
+학점계산 (A,B,C,D,F) - multi-label classification
+
+.. table::
+
+    x(hours)|y(score)
+    10|A
+    9|B
+    3|D
+    2|F
