@@ -42,6 +42,7 @@ Types of supervised learning
 시험 점수(1-100)를 예측 - regression
 
 .. table::
+
 +--------+--------+
 |x(hours)|y(score)|
 +========+========+
