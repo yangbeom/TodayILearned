@@ -11,6 +11,8 @@ Today I Learned
 
 20160706 - `Lambdas as a mechanism for Open/Closed <Codewars/20160706.rst>`_
 
+20160707 - `Sum of many ints <codewars/20160707.rst>`_ / `기본적인 Machine Learnning의 용어와 개념 설명 <MachineLearning/ML-01.rst>`_
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_

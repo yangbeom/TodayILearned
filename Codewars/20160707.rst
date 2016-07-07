@@ -1,0 +1,31 @@
+Sum of many ints
+================
+
+Write this function
+
+.. image:: http://i.imgur.com/mlbRlEm.png
+
+`for i from 1 to n` , do `i % m` and return the `sum` ::
+
+f(n=10, m=5) // returns 20 (1+2+3+4+0 + 1+2+3+4+0)
+You'll need to get a little clever with performance, since n can be a very large number
+
+1부터 n 까지의 %연산한 값을 더하는 계산이다.
+
+서버에러로인해 submit은 안되어 bestpractice를 확인할 수 없었다.
+
+.. code-block:: python
+
+    def f(n, m):
+        #My function body is ready
+       if n>m:
+            mod_list = [x%m for x in range(1,m+1)]
+            return sum(mod_list)*int(n/m)+sum(mod_list[:(n%m)])
+        else:
+            return sum([x%m for x in range(1,n+1)])
+
+n이 m보다 클때와 같거나 작을때로 나누어 계산하였다.
+
+예제에서 `0` 부터 `n-1` 까지가아닌 `1`부터 `n` 까지이기때문에 `range(1,n+1)` 로 진행하였고
+
+for문으로 전체를 진행하는 것 보다 list*(n/m) 과 나머지 부분을 합하는게 속도면에 좋다고 생각되어 이렇게 진행하게 되었다.
