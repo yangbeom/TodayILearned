@@ -23,4 +23,5 @@ Today I Learned
 
 번역
 ----
-python/Requests 진행중
+
+python/Requests 등록 대기중
