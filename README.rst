@@ -17,6 +17,9 @@ Today I Learned
 
 20160708 - `Github Page에 포트폴리오 작성 시작 <http://yangbeom.github.io>`_
 
+20160711 - `docker 무작정 따라하기 <http://www.slideshare.net/pyrasis/docker-fordummies-44424016>`_ / `Docker 튜토리얼 <http://blog.nacyot.com/articles/2014-01-27-easy-deploy-with-docker/>`_
+`Docker 기본 사용법 <http://pyrasis.com/Docker/Docker-HOWTO>` / Telegram 리팩토링을 위한 Daum Open API Test
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
