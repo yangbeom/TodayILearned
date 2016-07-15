@@ -32,7 +32,7 @@ Virtualenv 환경 만들기
     virtualenv -p /usr/bin/python2.7 venv //2.7버전을 이용하여 virtualenv생성
     virtualenv -p /usr/bin/python3.5 venv //3.5버전을 이용하여 virtualenv생성
 
-나는 ``` virtualenv -p /usr/bin/python3.5 ~/.venv/flask ``` 라고 만들었다.
+나는 ``virtualenv -p /usr/bin/python3.5 ~/.venv/flask`` 라고 만들었다.
 
 Virtualenv 이용하기
 -------------------
