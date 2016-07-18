@@ -1,9 +1,10 @@
 Today I Learned
 ================
 
-20160516 시작
-`시작일` : 20160516
-`목표` : 주말/공휴일을 제외한 모든날에 하나씩 공부를 하자!
+.. note::
+
+    `시작일` : 20160516
+    `목표` : 주말/공휴일을 제외한 모든날에 하나씩 공부를 하자!
 
 20160701 - Requests 재문의/herokubot sendlocation Test/HTML 본문 추출 연구(불필요한 부분을 다 지워도 불필요한 부분이 조금 남아있음. 조금 더 생각해 볼것.)
 
@@ -27,6 +28,8 @@ Today I Learned
 20160714 - `Docker Install <Docker/DockerInstall.rst>`_
 
 20160715 - `Virtualenv사용하기 <Python/virtualenv.rst>`_
+
+20160718 - `Ubuntu 16.04 에 mariadb설치후 Django에 연결하기 <Django/ConnectMariaDB.rst>`_ / `zsh설치 <zshinstall.rst>`_ / Docker Getstarted index 번역
 
 `201605 목록 <TOC/201605.rst>`_
 
