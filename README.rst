@@ -26,7 +26,9 @@ Today I Learned
 
 20160718 - `Ubuntu 16.04 에 mariadb설치후 Django에 연결하기 <Django/ConnectMariaDB.rst>`_ / `zsh설치 <zshinstall.rst>`_ / Docker Getstarted index 번역
 
-20160729 - Docker Getstarted last_page 번역 / Django overwatch연습 Model성 작성
+20160719 - Docker Getstarted last_page 번역 / Django overwatch연습 Model 작성
+
+20160720 - Docker Getstarted linux_install_help 번역 / `예제로 배우는 C# 01 <https://www.youtube.com/watch?v=qZAkIpkPbmc>`_
 
 `201605 목록 <TOC/201605.rst>`_
 
