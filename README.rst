@@ -30,6 +30,10 @@ Today I Learned
 
 20160720 - Docker Getstarted linux_install_help 번역 / `예제로 배우는 C# 01 <https://www.youtube.com/watch?v=qZAkIpkPbmc>`_
 
+20160721 - Docker Getstarted step_one 번역 / Docker Getstarted step_two 번역 / `예제로 배우는 C# 02 <https://www.youtube.com/watch?v=PT4biWWXJKY>`_
+
+20160722 - `예제로 배우는 C# 03 <https://www.youtube.com/channel/UCMhnWDQrvz77ICYvBIX8z7w/videos>`_
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
