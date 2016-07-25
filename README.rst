@@ -34,6 +34,8 @@ Today I Learned
 
 20160722 - `예제로 배우는 C# 03 <https://www.youtube.com/channel/UCMhnWDQrvz77ICYvBIX8z7w/videos>`_
 
+20160725 - `예제로 배우는 C# 04 <https://www.youtube.com/watch?v=tTcnbhkVBMs>`_
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
