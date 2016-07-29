@@ -40,6 +40,8 @@ Today I Learned
 
 20160727 - `예제로 배우는 C# 06 <https://www.youtube.com/watch?v=5yERdeEttSc>`_ / C#으로 Http Request,Response 보내보기(Instagram)
 
+20160728 - `예제로 배우는 C# 07 <https://www.youtube.com/watch?v=bq89583OrIg>`_
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
