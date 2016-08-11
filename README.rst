@@ -12,6 +12,9 @@ Today I Learned
 20160810 - `Ubuntu sudo 가능한 user만들기 <ETC/UbuntuUsermod.rst>`_ /
 `Django 와 postgresql 연결하기 <Django/Connectpostgresql.rst>`_
 
+20160811 - Nginx 세팅 but `sites-available` 에 setting 파일을 생성후 restart했으나
+셋팅값을 읽지 못함
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
