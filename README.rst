@@ -15,6 +15,7 @@ Today I Learned
 20160811 - Nginx 세팅 but `sites-available` 에 setting 파일을 생성후 restart했으나
 셋팅값을 읽지 못함
 
+20160812 - Nginx 세팅 2차 실패 / Git Error생김 ( ! [rejected]        master -> master (non-fast-forward) 원인찾아볼것)
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
