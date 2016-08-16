@@ -16,6 +16,8 @@ Today I Learned
 셋팅값을 읽지 못함
 
 20160812 - Nginx 세팅 2차 실패 / Git Error생김 ( ! [rejected]        master -> master (non-fast-forward) 원인찾아볼것)
+
+20160816 - Two Scoop of Django 1~6장 / AlbumManage Model 정의 완료
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
