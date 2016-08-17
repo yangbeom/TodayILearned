@@ -19,7 +19,7 @@ Today I Learned
 
 20160816 - Two Scoop of Django 1~6장 / AlbumManage Model 정의 완료
 
-20160817 - Herokubot 리팩토링
+20160817 - Herokubot 리팩토링 /Two Scoop of Django 7~10장
 
 `201605 목록 <TOC/201605.rst>`_
 
