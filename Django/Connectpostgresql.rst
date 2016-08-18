@@ -29,7 +29,7 @@ psycopg2 설치
 
 다른 블로그에 보면 ``django.db.backends.postgresql_psycopg2`` 로 적혀 있는 곳이 많이 보인다.
 
-`Django Doc 1.10 <https://docs.djangoproject.com/en/1.10/ref/settings/#std:setting-HOST>`_
+`Django Doc 1.10 <https://docs.djangoproject.com/en/1.10/ref/settings/#std:setting-ENGINE>`_
 에 보면 Django 1.9 이전의 ``django.db.backends.postgresql_psycopg2`` 가
 ``django.db.backends.postgresql``로 바뀌었다고 한다.
 
