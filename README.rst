@@ -21,7 +21,7 @@ Today I Learned
 
 20160817 - Herokubot 리팩토링 /Two Scoop of Django 7~10장
 
-20160818 - Bugs 앨범정보 가져오기 완료
+20160818 - `Bugs 앨범정보 가져오기 완료 <https://github.com/yangbeom/AlbumManage/blob/master/bugs.py>`_
 
 `201605 목록 <TOC/201605.rst>`_
 
