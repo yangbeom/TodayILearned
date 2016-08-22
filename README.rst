@@ -23,7 +23,7 @@ Today I Learned
 
 20160818 - `Bugs 앨범정보 가져오기 완료 <https://github.com/yangbeom/AlbumManage/blob/master/bugs.py>`_
 
-20160819 - Bugs 앨범정보 Django에 Post하여 DB에 저장 및 Admin Page에서 보이기
+20160822 - Bugs 앨범정보 Django에 Post하여 DB에 저장 및 Admin Page에서 보이기
 
 `201605 목록 <TOC/201605.rst>`_
 
