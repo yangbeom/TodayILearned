@@ -25,6 +25,8 @@ Today I Learned
 
 20160822 - Bugs 앨범정보 Django에 Post하여 DB에 저장 및 Admin Page에서 보이기
 
+20160824 - Materialize적용
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
@@ -35,4 +37,3 @@ Today I Learned
 ----
 
 python/Requests 등록 대기중
-Docker/Get Started 번역시작
