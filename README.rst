@@ -27,8 +27,7 @@ Today I Learned
 
 20160824 - Materialize적용
 
-20160825 - Bugs 앨범 CoverImage 저장 후 전송가능, But image저장안됨 집가서 해결
-할것
+20160825 - Bugs 앨범 CoverImage 저장 후 전송가능 및 media폴더에 저장가능
 
 `201605 목록 <TOC/201605.rst>`_
 
