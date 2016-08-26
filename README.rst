@@ -29,6 +29,8 @@ Today I Learned
 
 20160825 - Bugs 앨범 CoverImage 저장 후 전송가능 및 media폴더에 저장가능
 
+20160826 - 앨범명 입력시 자동으로 Title Artist Songs Pubdate CoverImage 저장가능
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
