@@ -31,7 +31,7 @@ Today I Learned
 
 20160826 - 앨범명 입력시 자동으로 Title Artist Songs Pubdate CoverImage 저장가능
 
-20160827 - `앨범 ListView 출력가능 <Image/AlbumListView.png>`_
+20160829 - `앨범 ListView 출력가능 <Image/AlbumListView.png>`_
 
 `201605 목록 <TOC/201605.rst>`_
 
