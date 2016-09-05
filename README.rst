@@ -1,7 +1,7 @@
 Today I Learned
 ================
 
-20160901 - 기존 봇('Heroku_yangbeombot <https://github.com/yangbeom/heroku_yangbeombot>`_)
+20160901 - 기존 봇(`Heroku_yangbeombot <https://github.com/yangbeom/heroku_yangbeombot>`_)
 을 django로 변환작업 시작
 
 20160902 - 기존 봇 변환작업중 Class based View로 작성 및 테스트
