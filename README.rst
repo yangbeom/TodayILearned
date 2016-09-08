@@ -12,7 +12,9 @@ Today I Learned
 
 20160906 - 작동되지 않는 봇기능 수정
 
-20160907 - Poster 전송기능 수정 그러나 원인을 찾지못함 
+20160907 - Poster 전송기능 수정 그러나 원인을 찾지못함
+
+20160908 - poster 전송기능 완료(Telegram 함수가 SendMessage로 되어있었음) / bot.yangbeom.com SSL 설정 완료
 
 `201605 목록 <TOC/201605.rst>`_
 
