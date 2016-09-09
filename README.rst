@@ -16,6 +16,8 @@ Today I Learned
 
 20160908 - poster 전송기능 완료(Telegram 함수가 SendMessage로 되어있었음) / bot.yangbeom.com SSL 설정 완료
 
+20160909 - 저장되던 파일을 NamedTempFile을 이용하여 전송 후 삭제되게 함
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
