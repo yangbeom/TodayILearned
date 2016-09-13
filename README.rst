@@ -20,7 +20,7 @@ Today I Learned
 
 20160912 - Torrent 마그넷 검색 구현시작 160912
 
-20160913 - tests for commit status2
+20160913 - tests for commit status3
 
 `201605 목록 <TOC/201605.rst>`_
 
