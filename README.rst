@@ -20,7 +20,8 @@ Today I Learned
 
 20160912 - Torrent 마그넷 검색 구현시작 160912
 
-20160913 - tests for commit status3
+20160913 - 오랜만에 github status에 들어가봤다니 push는 잘되었으나 status 그래프
+에는 찍혀 있지 않은 것을 발견 email주소가 잘못 설정되어 있었음
 
 `201605 목록 <TOC/201605.rst>`_
 
