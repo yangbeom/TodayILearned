@@ -23,6 +23,8 @@ Today I Learned
 20160913 - 오랜만에 github status에 들어가봤다니 push는 잘되었으나 status 그래프
 에는 찍혀 있지 않은 것을 발견 email주소가 잘못 설정되어 있었음
 
+20160919 - Celery 튜토리얼 + 테스트
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
