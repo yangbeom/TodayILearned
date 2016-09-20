@@ -25,6 +25,8 @@ Today I Learned
 
 20160919 - Celery 튜토리얼 + 테스트
 
+20160920 - DaumPotPlayer 생방송 리스트 가져오기
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
