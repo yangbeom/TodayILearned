@@ -27,6 +27,8 @@ Today I Learned
 
 20160920 - DaumPotPlayer 생방송 리스트 가져오기
 
+20160921 - PotPlayerBot 등록/삭제/등록된 리스트 확인기능
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
