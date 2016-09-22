@@ -14,7 +14,8 @@ Today I Learned
 
 20160907 - Poster 전송기능 수정 그러나 원인을 찾지못함
 
-20160908 - poster 전송기능 완료(Telegram 함수가 SendMessage로 되어있었음) / bot.yangbeom.com SSL 설정 완료
+20160908 - poster 전송기능 완료(Telegram 함수가 SendMessage로 되어있었음) / 
+bot.yangbeom.com SSL 설정 완료
 
 20160909 - 저장되던 파일을 NamedTempFile을 이용하여 전송 후 삭제되게 함
 
@@ -28,6 +29,8 @@ Today I Learned
 20160920 - DaumPotPlayer 생방송 리스트 가져오기
 
 20160921 - PotPlayerBot 등록/삭제/등록된 리스트 확인기능
+
+20160922 - 생방송 리스트 가공완료 / `Syncing a fork <ETC/syncingafork.rst>`_
 
 `201605 목록 <TOC/201605.rst>`_
 
