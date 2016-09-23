@@ -32,6 +32,8 @@ bot.yangbeom.com SSL 설정 완료
 
 20160922 - 생방송 리스트 가공완료 / `Syncing a fork <ETC/syncingafork.rst>`_
 
+20160923 - PotPlayerBot 테스트
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
