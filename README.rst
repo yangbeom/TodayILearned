@@ -34,6 +34,8 @@ bot.yangbeom.com SSL 설정 완료
 
 20160923 - PotPlayerBot 테스트
 
+20160926 - `PotSubot <https://telegram.me/PotSubot>`_ (PotplayerBot) 완료
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
