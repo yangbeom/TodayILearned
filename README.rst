@@ -38,6 +38,8 @@ bot.yangbeom.com SSL 설정 완료
 
 20160927 - PotSubot 불필요한 것 삭제 및 주석달기
 
+20160928 - PyConApac2016 동영상 시청
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
