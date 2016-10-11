@@ -7,6 +7,8 @@ Today I Learned
 
 20161010 - electron tutorial 시작
 
+20161011 - electron Plugin(flashplayer) 테스트
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
