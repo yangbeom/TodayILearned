@@ -9,6 +9,8 @@ Today I Learned
 
 20161011 - electron Plugin(flashplayer) 테스트
 
+20161012 - PotsuBot refactoring
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
