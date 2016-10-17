@@ -11,6 +11,8 @@ Today I Learned
 
 20161012 - PotsuBot refactoring
 
+20161017 - telegrambot inline image search 추가
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
