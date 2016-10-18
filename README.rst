@@ -13,6 +13,8 @@ Today I Learned
 
 20161017 - telegrambot inline image search 추가
 
+20161018 - 팟수봇기능추가를 위한 테스트
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
