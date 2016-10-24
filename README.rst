@@ -15,7 +15,9 @@ Today I Learned
 
 20161018 - 팟수봇기능추가를 위한 테스트
 
-20161020 - `Telegram Bot을 만들며 알게 된것들 <ETC/telegram.rst>`_
+20161020 - `Telegram Bot을 만들며 알게 된 것들 <ETC/telegram.rst>`_
+
+20161024 - PotsuBot 정지 시 potsu 삭제 + 알게 된 것들 추가
 
 `201605 목록 <TOC/201605.rst>`_
 

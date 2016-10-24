@@ -39,3 +39,8 @@ Telegram Bot Inline Message
 
 
 위와 같은 형식의 메세지가 도착하지만 message가 아닌 inline_query로 도착하게 된다.
+
+Telegram Bot을 정지하였을때
+---------------------------
+
+이때 봇이 정지한 사용자에게 메세지를 보내게 되면 403 오류가 리턴이 된다.
