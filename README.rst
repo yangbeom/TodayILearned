@@ -19,6 +19,8 @@ Today I Learned
 
 20161024 - PotsuBot 정지 시 potsu 삭제 + 알게 된 것들 추가
 
+20161025 - `IntermediatePython <https://github.com/yasoob/intermediatePython>`_
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
