@@ -23,7 +23,8 @@ Today I Learned
 
 20161026 - `IntermediatePython-kr
 <https://github.com/yangbeom/Translations/tree/master/intermediatePython-kr>`_
-번역 시작 
+번역 시작, `파이썬 생존 안내서 <http://www.slideshare.net/sublee/ss-67589513>`_
+1/2 읽기
 
 `201605 목록 <TOC/201605.rst>`_
 
