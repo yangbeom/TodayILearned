@@ -21,6 +21,10 @@ Today I Learned
 
 20161025 - `IntermediatePython <https://github.com/yasoob/intermediatePython>`_
 
+20161026 - `IntermediatePython-kr
+<https://github.com/yangbeom/Translations/tree/master/intermediatePython-kr>`_
+번역 시작 
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
