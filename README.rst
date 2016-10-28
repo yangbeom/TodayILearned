@@ -29,6 +29,7 @@ Today I Learned
 20161027 - PotSuBot manytomany 필드 카운팅하여 admin page에 추가하기, 
 `파이썬 생존 안내서 <http://www.slideshare.net/sublee/ss-67589513>`_ 완독
 
+20161028 - Docker 튜토리얼
 
 `201605 목록 <TOC/201605.rst>`_
 
