@@ -31,6 +31,8 @@ Today I Learned
 
 20161028 - Docker 튜토리얼
 
+20161031 - PotSuBot 사용자 정리
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
