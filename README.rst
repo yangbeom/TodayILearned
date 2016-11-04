@@ -1,37 +1,7 @@
 Today I Learned
 ================
 
-20161005 - C언어 기본서 예제 다시 풀어보기
-
-20161006~20161007 - C언어 연습 및 NHN Ent 연습문제 풀기
-
-20161010 - electron tutorial 시작
-
-20161011 - electron Plugin(flashplayer) 테스트
-
-20161012 - PotsuBot refactoring
-
-20161017 - telegrambot inline image search 추가
-
-20161018 - 팟수봇기능추가를 위한 테스트
-
-20161020 - `Telegram Bot을 만들며 알게 된 것들 <ETC/telegram.rst>`_
-
-20161024 - PotsuBot 정지 시 potsu 삭제 + 알게 된 것들 추가
-
-20161025 - `IntermediatePython <https://github.com/yasoob/intermediatePython>`_
-
-20161026 - `IntermediatePython-kr
-<https://github.com/yangbeom/Translations/tree/master/intermediatePython-kr>`_
-번역 시작, `파이썬 생존 안내서 <http://www.slideshare.net/sublee/ss-67589513>`_
-1/2 읽기
-
-20161027 - PotSuBot manytomany 필드 카운팅하여 admin page에 추가하기, 
-`파이썬 생존 안내서 <http://www.slideshare.net/sublee/ss-67589513>`_ 완독
-
-20161028 - Docker 튜토리얼
-
-20161031 - PotSuBot 사용자 정리
+20161104 - NeoVim 으로 변경, deoplete.nvim 문서 Pull Requests
 
 `201605 목록 <TOC/201605.rst>`_
 
@@ -42,6 +12,8 @@ Today I Learned
 `201608 목록 <TOC/201608.rst>`_
 
 `201609 목록 <TOC/201609.rst>`_
+
+`201610 목록 <TOC/201610.rst>`_
 
 번역
 ----
