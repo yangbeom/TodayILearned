@@ -3,6 +3,8 @@ Today I Learned
 
 20161104 - NeoVim 으로 변경, deoplete.nvim 문서 Pull Requests
 
+20161108 - PotsuBot Docker와 연동 테스트 성공
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
