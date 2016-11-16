@@ -5,6 +5,13 @@ Today I Learned
 
 20161108 - PotsuBot Docker와 연동 테스트 성공
 
+20161114 - `telegrambot-info <https://github.com/yangbeom/telegrambot-info`_ 작성 시작
+
+20161115 - IntermediatePython debugging 번역
+
+20161116 - IntermediatePython object_introspecton.rst 번역, telegrambot-info에
+location에 대한 정보 추가
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
