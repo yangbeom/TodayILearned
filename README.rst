@@ -10,7 +10,9 @@ Today I Learned
 20161115 - IntermediatePython debugging 번역
 
 20161116 - IntermediatePython object_introspecton.rst 번역, telegrambot-info에
-location에 대한 정보 추가
+location에 대한 정보 추가, travis-ci 사용해보기
+
+20161117 - electron-bugs 재도전 그러나 swf파일을 못가져옴
 
 `201605 목록 <TOC/201605.rst>`_
 
