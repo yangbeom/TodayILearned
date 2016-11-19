@@ -14,6 +14,11 @@ location에 대한 정보 추가, travis-ci 사용해보기
 
 20161117 - electron-bugs 재도전 그러나 swf파일을 못가져옴
 
+20161118 - electron-bugs 로그인 관련및 재생가능 확인
+
+20161119 - electron-bugs Keyborad shortkut 으로 재생 이전곡 다음곡 셋팅 완료
+(불필요한 테스트 소스 및 소스 정리후 오픈소스로 변경할 예정)
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
