@@ -25,6 +25,8 @@ location에 대한 정보 추가, travis-ci 사용해보기
 20161122 - `BugsElectronPlayer
 <https://github.com/yangbeom/BugsElectronPlayer>`_ / mac에서 안되던 오류 수정
 
+20161123-20161130 - layout을 변경하기 위한 몇가지 테스트
+
 `201605 목록 <TOC/201605.rst>`_
 
 `201606 목록 <TOC/201606.rst>`_
