@@ -1,7 +1,7 @@
 Today I Learned
 ================
 
-`yangbeom <https://www.codewars.com/users/Yangbeom/badges/large>`_
+.. image:: https://www.codewars.com/users/Yangbeom/badges/large
 
 20170224 - BugsElectronPlayer electron-builder사용하게 변경
 
